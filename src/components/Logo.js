@@ -1,5 +1,5 @@
 import React from 'react'
-import { Heading, SimpleGrid, Text } from '@chakra-ui/react'
+import { Heading, Text } from '@chakra-ui/react'
 import { Link } from 'react-router-dom'
 
 const Logo = () => {

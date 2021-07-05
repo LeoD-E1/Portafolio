@@ -1,8 +1,10 @@
 import { createStore } from 'redux'
+
 const initialState = {
   works: [],
   aboutInfo: [],
   skills: [],
+  mails: []
 }
 
 const reducer = (state = initialState, action) => {

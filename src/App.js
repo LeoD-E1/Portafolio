@@ -20,7 +20,6 @@ const App = (props) => {
   return (
     <BrowserRouter>
       <div className="App">
-        <Header />
         <Switch>
           <Route path="/" component={HomeScreen} exact />
           <Route path="/about" component={About} exact />

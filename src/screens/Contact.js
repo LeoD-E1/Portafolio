@@ -1,10 +1,14 @@
 import React from 'react'
 import { Box } from '@chakra-ui/react'
+import FormContact from '../components/FormContact'
+import ButtonBack from '../components/ButtonBack'
+
 
 const Contact = () => {
   return (
-    <Box pt={5} h="100vh" px={4}>
-      <h1>Contact page</h1>
+    <Box h="100vh">
+      <ButtonBack />
+      <FormContact />
     </Box>
   )
 }

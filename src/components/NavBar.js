@@ -1,5 +1,5 @@
 import React from 'react'
-import { Center, Box, Heading, Flex, Stack, Button, Text, Icon, HStack, VStack, Grid, GridItem, SimpleGrid } from '@chakra-ui/react'
+import { Center, Icon, Grid, GridItem } from '@chakra-ui/react'
 import { Link } from 'react-router-dom'
 import { EmailIcon } from '@chakra-ui/icons'
 import { BsBriefcaseFill } from 'react-icons/bs'
