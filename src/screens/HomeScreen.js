@@ -1,12 +1,14 @@
 import React from 'react'
-import { } from '@chakra-ui/react'
+import { Box } from '@chakra-ui/react'
 import Presentation from '../components/Presentation'
+import Skills from './Skills'
 
 const HomeScreen = () => {
   return (
-    <div>
+    <Box h={'100vh'}>
       <Presentation />
-    </div>
+      <Skills />
+    </Box>
   )
 }
 

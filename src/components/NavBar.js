@@ -9,35 +9,34 @@ import { FaUserCircle } from 'react-icons/fa'
 
 const NavBar = () => {
   return (
-    <Box>
-      <Center>
-        <Grid templateColumns="repeat(4, 1fr)" gap={3} w="100%">
-          <GridItem colSpan={1} p={1}>
-            <Link to="/contact">
-              <Center><EmailIcon w={5} h={5} /></Center>
-            </Link>
-          </GridItem>
 
-          <GridItem colSpan={1} p={1}>
-            <Link to="/works">
-              <Center><Icon as={BsBriefcaseFill} w={5} h={5} /></Center>
-            </Link>
-          </GridItem>
+    <Grid templateColumns="repeat(4, 1fr)" gap={3} w="100%" >
+      <GridItem colSpan={1} >
+        <Link to="/contact">
+          <Center><EmailIcon w={5} h={5} /></Center>
+        </Link>
+      </GridItem>
 
-          <GridItem colSpan={1} p={1}>
-            <Link to="skills">
-              <Center><Icon as={SiJavascript} w={5} h={5} /></Center>
-            </Link>
-          </GridItem>
+      <GridItem colSpan={1} >
+        <Link to="/works">
+          <Center><Icon as={BsBriefcaseFill} w={5} h={5} /></Center>
+        </Link>
+      </GridItem>
 
-          <GridItem colSpan={1} p={1}>
-            <Link to="/about">
-              <Center><Icon as={FaUserCircle} w={5} h={5} /></Center>
-            </Link>
-          </GridItem>
-        </Grid>
-      </Center>
-    </Box>
+      <GridItem colSpan={1} >
+        <Link to="skills">
+          <Center><Icon as={SiJavascript} w={5} h={5} /></Center>
+        </Link>
+      </GridItem>
+
+      <GridItem colSpan={1} >
+        <Link to="/about">
+          <Center><Icon as={FaUserCircle} w={5} h={5} /></Center>
+        </Link>
+      </GridItem>
+    </Grid>
+
+
   )
 }
 
