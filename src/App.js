@@ -1,24 +1,35 @@
-import logo from './logo.svg';
-import './App.css';
+import { useSelector } from 'react-redux'
+import Header from './components/Header';
+import HomeScreen from './screens/HomeScreen';
+import { Grid, GridItem, VStack, SimpleGrid, Box } from '@chakra-ui/react'
+import {
+  BrowserRouter,
+  Switch,
+  Route
+} from "react-router-dom";
+import About from './screens/About'
+import Contact from './screens/Contact'
+import Skills from './screens/Skills'
+import Works from './screens/Works'
 
-function App() {
+const App = (props) => {
+  const data = useSelector(state => {
+    console.log(state);
+  })
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <div className="App">
+        <Header />
+        <Switch>
+          <Route path="/" component={HomeScreen} exact />
+          <Route path="/about" component={About} exact />
+          <Route path="/contact" component={Contact} exact />
+          <Route path="/skills" component={Skills} exact />
+          <Route path="/works" component={Works} exact />
+        </Switch>
+      </div>
+    </BrowserRouter>
   );
 }
 
