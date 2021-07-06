@@ -1,9 +1,10 @@
 import React, { useState } from 'react'
-import { Heading, Flex, Input, Textarea, Button, Center } from '@chakra-ui/react'
+import { Heading, Flex, Input, Textarea, Button, Center, useColorModeValue } from '@chakra-ui/react'
 import { ArrowForwardIcon } from '@chakra-ui/icons'
 
-
 const FormContact = () => {
+
+  const backgroundColor = useColorModeValue("gray.100", "gray.700")
 
   const initialState = {
     email: "",
@@ -28,7 +29,7 @@ const FormContact = () => {
 
   return (
     <Flex h="100%" alignItems="center" justifyContent="center">
-      <Flex direction="column" bgColor="gray.100" p={12} rounded={6}>
+      <Flex direction="column" bgColor={backgroundColor} p={12} rounded={6}>
         <Heading mb={5} bgGradient="linear(to-r, teal.500,green.500)" bgClip="text" fontSize="2xl"> Send me an E-mail </Heading>
         <form onSubmit={handleSubmit}>
           <Input placeholder="juancito@gmail.com" variant="filled" mb={3} type="email" name="email" onChange={handleChange} required />

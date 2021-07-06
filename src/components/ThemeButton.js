@@ -9,21 +9,26 @@ const ThemeButton = () => {
       {
         colorMode === "light" ?
           <MoonIcon
-            alignSelf="flex-end"
+            position="absolute"
+            top="5"
+            right="5"
             onClick={toggleColorMode}
-            w={6}
-            h={6}
+            w={10}
+            h={10}
             rounded="50%"
             bgColor="gray.200"
-            p={1}
+            p={2}
           /> :
           <SunIcon
+            position="absolute"
+            top="5"
+            right="5"
             onClick={toggleColorMode}
-            w={6}
-            h={6}
-            bgGradient="linear(to-r, blue.500, purple.400, pink.500)"
+            w={10}
+            h={10}
+            bgColor="teal"
             rounded="50%"
-            p={1}
+            p={2}
           />
       }
     </Box>

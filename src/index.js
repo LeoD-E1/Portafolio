@@ -1,12 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
-import executeStore from './redux/store'
+import store from './redux/store'
 import { Provider } from 'react-redux'
 import { ChakraProvider, ColorModeScript } from "@chakra-ui/react"
 import theme from './configStyles/chakra'
 
-const store = executeStore()
+// const store = executeStore()
 
 ReactDOM.render(
   <React.StrictMode>

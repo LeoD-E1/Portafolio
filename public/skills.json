@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "name": "React",
+    "level": 80,
+    "years": 1
+  },
+  {
+    "id": 2,
+    "name": "Node JS",
+    "level": 80,
+    "years": 1
+  },
+  {
+    "id": 3,
+    "name": "Express JS",
+    "level": 87,
+    "years": 1
+  }
+]

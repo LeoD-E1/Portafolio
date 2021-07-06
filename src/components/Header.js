@@ -1,5 +1,5 @@
 import React from 'react'
-import { VStack, HStack, Box, Flex, SimpleGrid, Grid, GridItem, useColorModeValue } from '@chakra-ui/react'
+import { HStack, useColorModeValue } from '@chakra-ui/react'
 import Logo from './Logo'
 import NavBar from './NavBar';
 
