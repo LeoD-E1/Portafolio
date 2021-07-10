@@ -1,16 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
-import store from './redux/store'
 import { Provider } from 'react-redux'
+import appStore from './Store/appStore'
 import { ChakraProvider, ColorModeScript } from "@chakra-ui/react"
 import theme from './configStyles/chakra'
 
-// const store = executeStore()
-
 ReactDOM.render(
   <React.StrictMode>
-    <Provider store={store}>
+    <Provider store={appStore}>
       <ChakraProvider>
         <ColorModeScript initialColorMode={theme.config.initialColorMode} />
         <App />

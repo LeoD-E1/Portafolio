@@ -9,8 +9,8 @@ const ThemeButton = () => {
       {
         colorMode === "light" ?
           <MoonIcon
-            position="absolute"
-            top="5"
+            position="fixed"
+            bottom="5"
             right="5"
             onClick={toggleColorMode}
             w={10}
@@ -20,8 +20,8 @@ const ThemeButton = () => {
             p={2}
           /> :
           <SunIcon
-            position="absolute"
-            top="5"
+            position="fixed"
+            bottom="5"
             right="5"
             onClick={toggleColorMode}
             w={10}
