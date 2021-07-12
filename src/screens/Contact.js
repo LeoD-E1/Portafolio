@@ -7,11 +7,9 @@ import ThemeButton from '../components/ThemeButton'
 const Contact = () => {
   return (
     <Box h="100vh">
-      <VStack>
-        <ThemeButton />
-        <ButtonBack />
-      </VStack>
       <FormContact />
+      <ThemeButton />
+      <ButtonBack />
     </Box>
   )
 }

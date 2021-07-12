@@ -28,7 +28,7 @@ const FormContact = () => {
   const [mail, setMail] = useState(initialState)
 
   return (
-    <Flex h="100%" alignItems="center" justifyContent="center">
+    <Flex h="93vh" alignItems="center" justifyContent="center" >
       <Flex direction="column" bgColor={backgroundColor} p={12} rounded={6}>
         <Heading mb={5} bgGradient="linear(to-r, teal.500,green.500)" bgClip="text" fontSize="2xl"> Send me an E-mail </Heading>
         <form onSubmit={handleSubmit}>

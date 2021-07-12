@@ -10,7 +10,6 @@ import About from './screens/About'
 import Contact from './screens/Contact'
 import Skills from './screens/Skills'
 import Works from './screens/Works'
-import Header from './components/Header';
 
 const App = (props) => {
   const data = useSelector(state => {
@@ -20,7 +19,7 @@ const App = (props) => {
   return (
     <BrowserRouter>
       <div className="App">
-        <Header />
+
         <Switch>
           <Route path="/" component={HomeScreen} exact />
           <Route path="/about" component={About} exact />

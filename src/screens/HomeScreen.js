@@ -2,14 +2,17 @@ import React from 'react'
 import { Box } from '@chakra-ui/react'
 import Presentation from '../components/Presentation'
 import Skills from './Skills'
-import Works from './Works'
+import CardsWork from '../components/CardsWork'
 import ThemeButton from '../components/ThemeButton'
+import Header from '../components/Header'
 
 const HomeScreen = () => {
+
   return (
     <Box h={'100vh'}>
+      <Header />
       <Presentation />
-      <Works />
+      <CardsWork />
       <Skills />
       <ThemeButton />
     </Box>
