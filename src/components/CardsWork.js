@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import { Heading, Box, Image, Flex, Badge, Text, Link, HStack, Center } from '@chakra-ui/react'
+import { Heading, Box, Image, Flex, Badge, Text, Link, HStack, Center, SimpleGrid, Wrap, WrapItem } from '@chakra-ui/react'
 
 const CardsWork = () => {
   const [works, setWorks] = useState('')
@@ -15,31 +15,37 @@ const CardsWork = () => {
   }, [])
 
   return (
-    <Box mt={5} px={4}>
-      <Center><Heading>My Portfolio</Heading></Center>
-      <Flex justifyContent="center">
-        <HStack >
-          {
-            works &&
-            works.map(work => (
-              <Box p="5" maxW="320px" h={"420px"} borderWidth="1px" key={work.id} my={3} mx={1}>
-                <Link href={work.link} isExternal >
-                  <Image borderRadius="md" src={work.image} w="100%" objectFit="cover" h="200px" />
-                </Link>
-                <Flex align="baseline" my={4}>
-                  <Badge colorScheme="pink">{work.id}</Badge>
-                </Flex>
-                <Text mt={2} fontSize="xl" fontWeight="semibold" lineHeight="short">
-                  {work.name}
-                </Text>
-                <Text mt={2}>{work.description}</Text>
-              </Box>
-            ))
-          }
-        </HStack>
-      </Flex>
-    </Box>
+    <Center>
+      <Wrap spacing={3} maxW="80%">
+        {
+          works.length > 0 ? (
+            works.map((work) => (
+              <Link href={work.link} key={work.id} isExternal>
+                <WrapItem borderRadius="lg" >
+                  <Box
+                    maxW="320px"
+                    boxShadow={"xl"}
+                    borderWidth="1px"
+                    borderRadius="lg"
+                    h="370px"
+                  >
+                    <Image src={work.image} h="200px" w="100%" />
+                    <Flex p={2} align="baseline" mt={2}>
+                      <Badge px="2" colorScheme="teal">{work.id}</Badge>
+                    </Flex>
+                    <Text m={2} fontSize="xl" fontWeight="semibold" lineHeight="short">{work.name}</Text>
+                    <Text fontSize="md" mx={2}>{work.description}</Text>
 
+                  </Box>
+                </WrapItem>
+              </Link>
+            ))
+          ) : (
+            <Text fontSize={["xl", "2xl", "3xl"]}>Sin datos de trabajos.</Text>
+          )
+        }
+      </Wrap>
+    </Center>
   )
 }
 
