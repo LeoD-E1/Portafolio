@@ -3,7 +3,7 @@ import { createSlice } from '@reduxjs/toolkit'
 const workSlice = createSlice({
   name: 'work',
   initialState: {
-    id: '',
+    id: 0,
     name: '',
     link: '',
     portrait: '',

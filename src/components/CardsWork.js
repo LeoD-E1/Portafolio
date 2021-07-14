@@ -1,8 +1,12 @@
 import React, { useState, useEffect } from 'react'
 import { Heading, Box, Image, Flex, Badge, Text, Link, HStack, Center, SimpleGrid, Wrap, WrapItem } from '@chakra-ui/react'
+import { useSelector } from 'react-redux'
 
 const CardsWork = () => {
-  const [works, setWorks] = useState('')
+
+  const works = useSelector(state => state.work)
+
+  /* const [works, setWorks] = useState('')
 
   const getWorks = async () => {
     const res = await fetch('/works.json')
@@ -12,7 +16,7 @@ const CardsWork = () => {
 
   useEffect(() => {
     getWorks()
-  }, [])
+  }, []) */
 
   return (
     <Center>
@@ -29,7 +33,7 @@ const CardsWork = () => {
                     borderRadius="lg"
                     h="370px"
                   >
-                    <Image src={work.image} h="200px" w="100%" />
+                    <Image src={work.portrait} h="200px" w="100%" />
                     <Flex p={2} align="baseline" mt={2}>
                       <Badge px="2" colorScheme="teal">{work.id}</Badge>
                     </Flex>
@@ -41,7 +45,7 @@ const CardsWork = () => {
               </Link>
             ))
           ) : (
-            <Text fontSize={["xl", "2xl", "3xl"]}>Sin datos de trabajos.</Text>
+            <Text fontSize={["md", "2xl", "3xl"]}>Have not Works loaded...</Text>
           )
         }
       </Wrap>

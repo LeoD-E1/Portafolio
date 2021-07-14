@@ -1,4 +1,6 @@
-import { useSelector } from 'react-redux'
+import React, { useEffect } from 'react';
+import { useSelector, useDispatch } from 'react-redux'
+import { addWork } from './store/work/workSlice'
 import HomeScreen from './screens/HomeScreen';
 import { Grid, GridItem, VStack, SimpleGrid, Box } from '@chakra-ui/react'
 import {
@@ -10,11 +12,21 @@ import About from './screens/About'
 import Contact from './screens/Contact'
 import Skills from './screens/Skills'
 import Works from './screens/Works'
+import axios from 'axios';
 
 const App = (props) => {
-  const data = useSelector(state => {
-    console.log(state);
-  })
+
+  const dispatch = useDispatch()
+
+  const getWorks = async () => {
+    const { data } = await axios.get('/works.json')
+    console.log(data);
+    dispatch(addWork(data))
+  }
+
+  useEffect(() => {
+    getWorks()
+  }, [])
 
   return (
     <BrowserRouter>
