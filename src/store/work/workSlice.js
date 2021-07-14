@@ -1,7 +1,6 @@
-import createSlice from '@reduxjs/toolkit'
+import { createSlice } from '@reduxjs/toolkit'
 
-const user = ''
-const worksSlice = createSlice({
+const workSlice = createSlice({
   name: 'work',
   initialState: {
     id: '',
@@ -10,7 +9,6 @@ const worksSlice = createSlice({
     portrait: '',
     images: '',
     description: '',
-    id_portfolio: user
   },
   reducers: {
     addWork: (state, action) => {
@@ -22,18 +20,15 @@ const worksSlice = createSlice({
       state.description = action.payload.description;
     },
     editWork: (state, action) => {
-      state.id = action.payload.id;
       state.name = action.payload.name;
       state.link = action.payload.link;
       state.portrait = action.payload.portrait;
       state.images = action.payload.images;
       state.description = action.payload.description;
     },
-    deleteWork: (state, action) => {
-      state.id = action.payload.id;
-    }
+    deleteWork: (state) => state.id
   }
 })
 
-export const { addWork, editWork, deleteWork } = worksSlice.actions;
-export default worksSlice
+export const { addWork, editWork, deleteWork } = workSlice.actions
+export default workSlice.reducer
