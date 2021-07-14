@@ -1,11 +1,10 @@
-import React, { useState, useEffect } from 'react'
-import { Heading, Box, Image, Flex, Badge, Text, Link, HStack, Center, SimpleGrid, Wrap, WrapItem } from '@chakra-ui/react'
+import React from 'react'
+import { Box, Image, Flex, Badge, Text, Link, Center, Wrap, WrapItem } from '@chakra-ui/react'
 import { useSelector } from 'react-redux'
 
 const CardsWork = () => {
 
   const works = useSelector(state => state.work)
-
   /* const [works, setWorks] = useState('')
 
   const getWorks = async () => {
@@ -45,7 +44,7 @@ const CardsWork = () => {
               </Link>
             ))
           ) : (
-            <Text fontSize={["md", "2xl", "3xl"]}>Have not Works loaded...</Text>
+            <Text fontSize={["md", "xl", "2xl"]}>Have not Works loaded...</Text>
           )
         }
       </Wrap>

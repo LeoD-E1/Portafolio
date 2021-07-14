@@ -2,22 +2,10 @@ import { createSlice } from '@reduxjs/toolkit'
 
 const workSlice = createSlice({
   name: 'work',
-  initialState: {
-    id: 0,
-    name: '',
-    link: '',
-    portrait: '',
-    images: '',
-    description: '',
-  },
+  initialState: [],
   reducers: {
     addWork: (state, action) => {
-      state.id = action.payload.id;
-      state.name = action.payload.name;
-      state.link = action.payload.link;
-      state.portrait = action.payload.portrait;
-      state.images = action.payload.images;
-      state.description = action.payload.description;
+      return state = [...action.payload]
     },
     editWork: (state, action) => {
       state.name = action.payload.name;

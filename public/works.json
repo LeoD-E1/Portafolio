@@ -4,6 +4,7 @@
     "name": "Gabiteacher",
     "link": "https://gabiteacher-dev.herokuapp.com",
     "portrait": "https://gabiteacher-dev.herokuapp.com/public/img/knowledge-1052014_1920.jpg",
+    "images": [],
     "description": "Tu escuela de inglés online, Capacitacion de inglés para personas que quieran aprender desde los básicos"
   },
   {
@@ -11,6 +12,7 @@
     "name": "Api-Weather",
     "link": "https://leoda-apiweather.netlify.app/",
     "portrait": "https://preview.redd.it/37i7ugj21mf51.jpg?width=3840&format=pjpg&auto=webp&s=5f81f5d1e1c079ce41bed20b2859b5b86f937186",
+    "images": [],
     "description": "A brief weather application"
   },
   {
@@ -18,6 +20,7 @@
     "name": " User profile screen",
     "link": "https://leoda-profile-user.netlify.app/",
     "portrait": "https://fondosmil.com/fondo/17010.jpg",
+    "images": [],
     "description": "a brief user profile application"
   },
   {
@@ -25,12 +28,14 @@
     "name": "Gabiteacher",
     "link": "https://gabiteacher-dev.herokuapp.com",
     "portrait": "https://gabiteacher-dev.herokuapp.com/public/img/knowledge-1052014_1920.jpg",
+    "images": [],
     "description": "Tu escuela de inglés online, Capacitacion de inglés para personas que quieran aprender desde los básicos"
   },
   {
     "id": 5,
     "name": "Api-Weather",
     "link": "https://leoda-apiweather.netlify.app/",
+    "images": [],
     "portrait": "https://preview.redd.it/37i7ugj21mf51.jpg?width=3840&format=pjpg&auto=webp&s=5f81f5d1e1c079ce41bed20b2859b5b86f937186",
     "description": "A brief weather application"
   },
@@ -39,6 +44,7 @@
     "name": " User profile screen",
     "link": "https://leoda-profile-user.netlify.app/",
     "portrait": "https://fondosmil.com/fondo/17010.jpg",
+    "images": [],
     "description": "a brief user profile application"
   },
   {
@@ -46,6 +52,7 @@
     "name": "Gabiteacher",
     "link": "https://gabiteacher-dev.herokuapp.com",
     "portrait": "https://gabiteacher-dev.herokuapp.com/public/img/knowledge-1052014_1920.jpg",
+    "images": [],
     "description": "Tu escuela de inglés online, Capacitacion de inglés para personas que quieran aprender desde los básicos"
   },
   {
@@ -53,6 +60,7 @@
     "name": "Api-Weather",
     "link": "https://leoda-apiweather.netlify.app/",
     "portrait": "https://preview.redd.it/37i7ugj21mf51.jpg?width=3840&format=pjpg&auto=webp&s=5f81f5d1e1c079ce41bed20b2859b5b86f937186",
+    "images": [],
     "description": "A brief weather application"
   },
   {
@@ -60,6 +68,7 @@
     "name": " User profile screen",
     "link": "https://leoda-profile-user.netlify.app/",
     "portrait": "https://fondosmil.com/fondo/17010.jpg",
+    "images": [],
     "description": "a brief user profile application"
   }
 ]
