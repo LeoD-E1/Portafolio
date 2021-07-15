@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
-import { useSelector, useDispatch } from 'react-redux'
-import { addWork } from './store/work/workSlice'
+import { useDispatch } from 'react-redux'
+import { getWorks } from './store/work/workSlice'
 import HomeScreen from './screens/HomeScreen';
 import {
   BrowserRouter,
@@ -17,13 +17,13 @@ const App = () => {
 
   const dispatch = useDispatch()
 
-  const getWorks = async () => {
+  const fetchWorks = async () => {
     const { data } = await axios.get('/works.json')
-    dispatch(addWork(data))
+    dispatch(getWorks(data))
   }
 
   useEffect(() => {
-    getWorks()
+    fetchWorks()
   }, [])
 
   return (

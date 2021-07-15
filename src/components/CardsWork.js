@@ -1,21 +1,11 @@
 import React from 'react'
 import { Box, Image, Flex, Badge, Text, Link, Center, Wrap, WrapItem } from '@chakra-ui/react'
+
 import { useSelector } from 'react-redux'
 
 const CardsWork = () => {
 
   const works = useSelector(state => state.work)
-  /* const [works, setWorks] = useState('')
-
-  const getWorks = async () => {
-    const res = await fetch('/works.json')
-    const data = await res.json()
-    setWorks(data)
-  }
-
-  useEffect(() => {
-    getWorks()
-  }, []) */
 
   return (
     <Center>

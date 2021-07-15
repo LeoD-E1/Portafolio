@@ -4,7 +4,7 @@ const workSlice = createSlice({
   name: 'work',
   initialState: [],
   reducers: {
-    addWork: (state, action) => {
+    getWorks: (state, action) => {
       return state = [...action.payload]
     },
     editWork: (state, action) => {
@@ -18,5 +18,5 @@ const workSlice = createSlice({
   }
 })
 
-export const { addWork, editWork, deleteWork } = workSlice.actions
+export const { editWork, deleteWork, getWorks } = workSlice.actions
 export default workSlice.reducer
