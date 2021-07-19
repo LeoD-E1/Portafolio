@@ -16,7 +16,7 @@ const SkillsList = () => {
               <GridItem colSpan="1"><Image src={skill.image} boxSize={["30px", "50px", "70px"]} alt={skill.name} /></GridItem>
               <GridItem colSpan="2">
                 <Text as="em" fontWeight="bold" fontSize={['sm', 'md', 'xl']}>{skill.name}</Text>
-                <Text color="red">{skill.level}%</Text>
+                <Text color="orangered">{skill.level}%</Text>
               </GridItem>
               <GridItem colSpan="4"><Progress value={skill.level} size="xs" colorScheme="blue" isAnimated /></GridItem>
             </Grid>
