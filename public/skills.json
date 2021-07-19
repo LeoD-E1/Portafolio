@@ -8,28 +8,28 @@
   },
   {
     "id": 2,
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/React.svg/1200px-React.svg.png",
+    "image": "https://seeklogo.com/images/N/nodejs-logo-FBE122E377-seeklogo.com.png",
     "name": "Node JS",
     "level": 80,
     "years": 1
   },
   {
     "id": 3,
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/React.svg/1200px-React.svg.png",
+    "image": "https://nestormyrie.com/static/media/expresslogo.bd60c4de.png",
     "name": "Express JS",
     "level": 87,
     "years": 1
   },
   {
     "id": 4,
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/React.svg/1200px-React.svg.png",
+    "image": "https://cdn.worldvectorlogo.com/logos/dart.svg",
     "name": "Dart",
     "level": 25,
     "years": 0.3
   },
   {
     "id": 5,
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/React.svg/1200px-React.svg.png",
+    "image": "https://img.icons8.com/color/452/mongodb.png",
     "name": "MongoDB",
     "level": 55,
     "years": 0.7
