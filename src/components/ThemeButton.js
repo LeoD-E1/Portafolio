@@ -13,8 +13,8 @@ const ThemeButton = () => {
             bottom="2"
             right="2"
             onClick={toggleColorMode}
-            w={8}
-            h={8}
+            w={[8, 10, 12]}
+            h={[8, 10, 12]}
             rounded="50%"
             bgColor="gray.200"
             p={2}
@@ -24,11 +24,11 @@ const ThemeButton = () => {
             bottom="2"
             right="2"
             onClick={toggleColorMode}
-            w={8}
-            h={8}
+            w={[8, 10, 12]}
+            h={[8, 10, 12]}
             bgColor="teal"
             rounded="50%"
-            p={2}
+            p={[2, 3, 4]}
           />
       }
     </Box>

@@ -22,7 +22,7 @@ const CardsWork = () => {
                     borderRadius="lg"
                     h="370px"
                   >
-                    <Image src={work.portrait} h="200px" w="100%" />
+                    <Image src={work.portrait} h="200px" w="100%" rounded="md" />
                     <Flex p={2} align="baseline" mt={2}>
                       <Badge px="2" colorScheme="teal">{work.id}</Badge>
                     </Flex>

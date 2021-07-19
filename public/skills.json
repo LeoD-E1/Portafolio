@@ -1,18 +1,21 @@
 [
   {
     "id": 1,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/React.svg/1200px-React.svg.png",
     "name": "React",
     "level": 80,
     "years": 1
   },
   {
     "id": 2,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/React.svg/1200px-React.svg.png",
     "name": "Node JS",
     "level": 80,
     "years": 1
   },
   {
     "id": 3,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/React.svg/1200px-React.svg.png",
     "name": "Express JS",
     "level": 87,
     "years": 1
