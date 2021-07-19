@@ -10,22 +10,22 @@ const ThemeButton = () => {
         colorMode === "light" ?
           <MoonIcon
             position="fixed"
-            bottom="5"
-            right="5"
+            bottom="2"
+            right="2"
             onClick={toggleColorMode}
-            w={10}
-            h={10}
+            w={8}
+            h={8}
             rounded="50%"
             bgColor="gray.200"
             p={2}
           /> :
           <SunIcon
             position="fixed"
-            bottom="5"
-            right="5"
+            bottom="2"
+            right="2"
             onClick={toggleColorMode}
-            w={10}
-            h={10}
+            w={8}
+            h={8}
             bgColor="teal"
             rounded="50%"
             p={2}

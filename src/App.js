@@ -1,29 +1,38 @@
+// External
 import React, { useEffect } from 'react';
+import axios from 'axios';
 import { useDispatch } from 'react-redux'
-import { getWorks } from './store/work/workSlice'
-import HomeScreen from './screens/HomeScreen';
 import {
   BrowserRouter,
   Switch,
   Route
 } from "react-router-dom";
+// Reducers
+import { getWorks } from './store/work/workSlice'
+import { getSkills } from './store/skills/skillSlice'
+// screens
 import About from './screens/About'
 import Contact from './screens/Contact'
 import Skills from './screens/Skills'
 import Works from './screens/Works'
-import axios from 'axios';
+import HomeScreen from './screens/HomeScreen';
+// Components
+import ThemeButton from './components/ThemeButton';
+
 
 const App = () => {
 
   const dispatch = useDispatch()
 
-  const fetchWorks = async () => {
+  const fetchData = async () => {
     const { data } = await axios.get('/works.json')
     dispatch(getWorks(data))
+    const skills = await axios.get('/skills.json')
+    dispatch(getSkills(skills.data))
   }
 
   useEffect(() => {
-    fetchWorks()
+    fetchData()
   }, [])
 
   return (
@@ -37,6 +46,7 @@ const App = () => {
           <Route path="/skills" component={Skills} exact />
           <Route path="/works" component={Works} exact />
         </Switch>
+        <ThemeButton />
       </div>
     </BrowserRouter>
   );

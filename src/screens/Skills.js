@@ -1,19 +1,10 @@
-import React, { useState, useEffect } from 'react'
+import React from 'react'
+import { useSelector } from 'react-redux'
 import { Box, Text, VStack, HStack, Progress } from '@chakra-ui/react'
-import axios from 'axios'
 
 const Skills = () => {
 
-  const [skills, setSkills] = useState([])
-
-  const getData = async () => {
-    const res = await axios.get('/skills.json')
-    setSkills([...res.data])
-  }
-
-  useEffect(() => {
-    getData()
-  }, [])
+  const skills = useSelector(state => state.skill)
 
   return (
     <Box pt={5} h="100vh" px={4} /* bgColor="#1B1F24" */>

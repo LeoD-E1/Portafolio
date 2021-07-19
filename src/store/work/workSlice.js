@@ -13,10 +13,9 @@ const workSlice = createSlice({
       state.portrait = action.payload.portrait;
       state.images = action.payload.images;
       state.description = action.payload.description;
-    },
-    deleteWork: (state) => state.id
+    }
   }
 })
 
-export const { editWork, deleteWork, getWorks } = workSlice.actions
+export const { editWork, getWorks } = workSlice.actions
 export default workSlice.reducer

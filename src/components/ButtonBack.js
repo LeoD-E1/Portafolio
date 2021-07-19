@@ -9,7 +9,7 @@ const ButtonBack = () => {
 
   return (
     <Link to="/">
-      <ChevronLeftIcon h={9} w={9} p={2} bgColor={backgroundColor} rounded='50%' position="absolute" top="5" left="5" />
+      <ChevronLeftIcon h={8} w={8} p={1} bgColor={backgroundColor} rounded='50%' position="fixed" top="2" left="2" />
     </Link>
   )
 }

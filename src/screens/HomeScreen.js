@@ -2,7 +2,6 @@ import React from 'react'
 import { Box, Heading, Center, Button } from '@chakra-ui/react'
 import Presentation from '../components/Presentation'
 import Skills from './Skills'
-import ThemeButton from '../components/ThemeButton'
 import Header from '../components/Header'
 import LastWordCards from './components/LastWordCards'
 import { ArrowForwardIcon } from '@chakra-ui/icons'
@@ -24,7 +23,6 @@ const HomeScreen = () => {
         </Link>
       </Center>
       <Skills />
-      <ThemeButton />
     </Box>
   )
 }
