@@ -2,9 +2,10 @@ import React from 'react'
 import { useSelector } from 'react-redux'
 import { Heading, Image, Progress, Grid, GridItem, Flex, Text } from '@chakra-ui/react'
 
-const Skills = () => {
+const LastSkills = () => {
 
-  const skills = useSelector(state => state.skill)
+  const skillsCompleted = useSelector(state => state.skill)
+  const skills = skillsCompleted.filter(skill => skill.id >= skillsCompleted.length - 2)
 
   return (
     <Flex pt={5} px={3} justifyContent="center" h="93vh" alignItems="center"/* bgColor="#1B1F24" */>
@@ -24,4 +25,4 @@ const Skills = () => {
   )
 }
 
-export default Skills
+export default LastSkills

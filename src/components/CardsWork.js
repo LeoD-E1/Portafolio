@@ -1,5 +1,5 @@
 import React from 'react'
-import { Box, Image, Flex, Badge, Text, Link, Center, Wrap, WrapItem } from '@chakra-ui/react'
+import { Box, Image, Flex, Badge, Text, Link, Wrap, WrapItem } from '@chakra-ui/react'
 
 import { useSelector } from 'react-redux'
 
@@ -8,12 +8,13 @@ const CardsWork = () => {
   const works = useSelector(state => state.work)
 
   return (
-    <Center>
-      <Wrap spacing={3} maxW="80%">
+    <Flex justifyContent="center">
+      <Wrap spacing={3} maxW="80%" >
         {
           works.length > 0 ? (
             works.map((work) => (
               <Link href={work.link} key={work.id} isExternal>
+
                 <WrapItem borderRadius="lg" >
                   <Box
                     maxW="320px"
@@ -31,6 +32,7 @@ const CardsWork = () => {
 
                   </Box>
                 </WrapItem>
+
               </Link>
             ))
           ) : (
@@ -38,7 +40,7 @@ const CardsWork = () => {
           )
         }
       </Wrap>
-    </Center>
+    </Flex>
   )
 }
 

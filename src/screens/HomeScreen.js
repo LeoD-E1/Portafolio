@@ -1,7 +1,7 @@
 import React from 'react'
 import { Box, Heading, Center, Button } from '@chakra-ui/react'
 import Presentation from '../components/Presentation'
-import Skills from './Skills'
+import LastSkills from './components/LastSkills'
 import Header from '../components/Header'
 import LastWordCards from './components/LastWordCards'
 import { ArrowForwardIcon } from '@chakra-ui/icons'
@@ -13,7 +13,7 @@ const HomeScreen = () => {
     <Box h={'100vh'}>
       <Header />
       <Presentation />
-      <Center mb={5}><Heading> my last works</Heading></Center>
+      <Center mb={5}><Heading> My last works</Heading></Center>
       <LastWordCards />
       <Center mt={10}>
         <Link to="/works">
@@ -22,7 +22,7 @@ const HomeScreen = () => {
           </Button>
         </Link>
       </Center>
-      <Skills />
+      <LastSkills />
     </Box>
   )
 }

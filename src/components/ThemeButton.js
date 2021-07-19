@@ -17,7 +17,7 @@ const ThemeButton = () => {
             h={[8, 10, 12]}
             rounded="50%"
             bgColor="gray.200"
-            p={2}
+            p={[2, 3, 4]}
           /> :
           <SunIcon
             position="fixed"
