@@ -17,7 +17,6 @@ _These instructions will allow you to get a copy of the project on your local ma
 
 * Nodejs => nodejs.org
 * npm => this package manager comes with nodejs
-* PostgreSQL => postgresql.org
 
 ### Instalación 🔧
 
