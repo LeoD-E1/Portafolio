@@ -24,15 +24,27 @@ const App = () => {
 
   const dispatch = useDispatch()
 
-  const fetchData = async () => {
-    const { data } = await axios.get('/works.json')
-    dispatch(getWorks(data))
-    const skills = await axios.get('/skills.json')
-    dispatch(getSkills(skills.data))
+  const fetchWorks = async () => {
+    try {
+      const { data } = await axios.get('/works.json')
+      dispatch(getWorks(data))
+    } catch (error) {
+      console.log(error);
+    }
+  }
+
+  const fetchSkills = async () => {
+    try {
+      const { data } = await axios.get('/skills.json')
+      dispatch(getSkills(data))
+    } catch (error) {
+      console.log(error);
+    }
   }
 
   useEffect(() => {
-    fetchData()
+    fetchWorks()
+    fetchSkills()
   }, [])
 
   return (
