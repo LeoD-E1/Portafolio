@@ -1,11 +1,11 @@
-import { createSlice } from '@reduxjs/toolkit'
+import { createSlice } from "@reduxjs/toolkit";
 
 const workSlice = createSlice({
-  name: 'work',
+  name: "work",
   initialState: [],
   reducers: {
     getWorks: (state, action) => {
-      return state = [...action.payload]
+      return (state = [...action.payload]);
     },
     editWork: (state, action) => {
       state.name = action.payload.name;
@@ -13,9 +13,9 @@ const workSlice = createSlice({
       state.portrait = action.payload.portrait;
       state.images = action.payload.images;
       state.description = action.payload.description;
-    }
-  }
-})
+    },
+  },
+});
 
-export const { editWork, getWorks } = workSlice.actions
-export default workSlice.reducer
+export const { editWork, getWorks } = workSlice.actions;
+export default workSlice.reducer;

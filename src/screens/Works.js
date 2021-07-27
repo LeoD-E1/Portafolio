@@ -1,17 +1,17 @@
-
-import { Heading, Box, Center } from '@chakra-ui/react'
-import CardsWork from '../components/CardsWork';
-import ButtonBack from '../components/ButtonBack'
+import { Heading, Box, Center } from "@chakra-ui/react";
+import CardsWork from "../components/CardsWork";
+import ButtonBack from "../components/ButtonBack";
 
 const Works = () => {
-
   return (
     <Box>
       <ButtonBack />
-      <Center><Heading m={5}>My Porfolio</Heading></Center>
+      <Center>
+        <Heading m={5}>My Porfolio</Heading>
+      </Center>
       <CardsWork />
     </Box>
-  )
-}
+  );
+};
 
-export default Works
+export default Works;

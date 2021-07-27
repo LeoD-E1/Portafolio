@@ -1,5 +1,5 @@
 import React from 'react'
-import { Box, Heading, Center, Button } from '@chakra-ui/react'
+import { Box, Heading, Center, Button, Image } from '@chakra-ui/react'
 import Presentation from '../components/Presentation'
 import LastSkills from './components/LastSkills'
 import Header from '../components/Header'

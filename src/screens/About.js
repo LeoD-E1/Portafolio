@@ -1,12 +1,29 @@
-import React from 'react'
-import { Box } from '@chakra-ui/react'
+import React from "react";
+import {
+  Avatar,
+  Box,
+  Grid,
+  GridItem,
+  Flex,
+  VStack,
+  Text,
+} from "@chakra-ui/react";
 
-const About = () => {
+const AboutMe = () => {
   return (
-    <Box pt={5} h="100vh" px={4}>
-      <h1>About me page</h1>
-    </Box>
-  )
-}
+    <Flex bgColor="orangered" justifyContent="center" alignItems="center">
+      <Flex>
+        <VStack>
+          <Avatar src="" size="200px" boxShadow="xl" w={"50%"} />
+          <Text>
+            Lorem ipsum dolor sit amet, consectetur Lorem ipsum dolor sit amet,
+            consectetur Lorem ipsum dolor sit amet, consectetur Lorem ipsum
+            dolor sit amet, consectetur
+          </Text>
+        </VStack>
+      </Flex>
+    </Flex>
+  );
+};
 
-export default About
+export default AboutMe;

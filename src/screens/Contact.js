@@ -1,5 +1,5 @@
 import React from 'react'
-import { Box, VStack } from '@chakra-ui/react'
+import { Box } from '@chakra-ui/react'
 import FormContact from '../components/FormContact'
 import ButtonBack from '../components/ButtonBack'
 
