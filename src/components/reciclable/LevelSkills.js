@@ -14,7 +14,7 @@ const LevelSkills = ({ skills }) => {
           <GridItem colSpan="1">
             <Image
               src={item.image}
-              boxSize={["30px", "50px", "70px"]}
+              boxSize={["20px", "30px", "40px"]}
               alt={item.name}
             />
           </GridItem>

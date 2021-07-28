@@ -6,20 +6,15 @@ import ButtonsSocial from "./ButtonsSocial";
 
 const Presentation = () => {
   return (
-    <VStack h={"93vh"} justifyContent="center" alignItems="center">
+    <VStack h={["93vh", "95vh"]} justifyContent="center" alignItems="center">
       <Flex m={1} direction="column">
-        <Text
-          fontSize={["4xl", "6xl"]}
-          bgGradient="linear(to-r, blue.600, pink.500, red.600)"
-          p={2}
-          bgClip="text"
-        >
+        <Text fontSize={["4xl", "6xl"]} color="orangered" p={2}>
           Hi i'm <br />
           Leoda,
           <br /> web developer
         </Text>
         <Text fontSize={["md", "2xl"]} p={4}>
-          Javascript MERN Stack / Python Dev{" "}
+          Javascript MERN Stack / Python Dev
         </Text>
         <Center>
           <VStack>
@@ -29,8 +24,7 @@ const Presentation = () => {
                 size="md"
                 variant="outline"
                 mb={4}
-                bgGradient="linear(to-r, blue.600, pink.500, red.600)"
-                color="white"
+                _hover={{ bg: "orangered", color: "white" }}
               >
                 Contact Me
               </Button>
