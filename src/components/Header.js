@@ -11,7 +11,7 @@ const Header = () => {
       bgColor={backgroundColor}
       position="sticky"
       top="0"
-      h={["7vh", "5vh"]}
+      h="5vh"
       w={"100%"}
       p={2}
       zIndex="9"

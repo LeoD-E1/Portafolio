@@ -15,12 +15,11 @@ import { useSelector } from "react-redux";
 
 const Presentation = () => {
   const user = useSelector((state) => state.user);
-  console.log(user);
 
   return (
     <Flex
       w={"full"}
-      h={["93vh", "95vh"]}
+      h="95vh"
       backgroundImage={"url(https://wallpaperaccess.com/full/3497712.jpg)"}
       backgroundSize={"cover"}
       backgroundPosition={"center center"}
@@ -50,14 +49,15 @@ const Presentation = () => {
                 lg: "6xl",
               })}
             >
-              Leonardo D'angeli,
+              {/* Leonardo D'angeli */}
+              {user.name} {user.surname}
             </Heading>
             <Text
               color={"white"}
               fontSize={useBreakpointValue({ base: "xl", md: "2xl" })}
               fontWeight={700}
             >
-              I solve your web development problems
+              I create solutions
             </Text>
           </Stack>
           <Stack direction={"row"}>
