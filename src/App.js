@@ -6,6 +6,7 @@ import { BrowserRouter, Switch, Route } from "react-router-dom";
 // Reducers
 import { getWorks } from "./store/work/workSlice";
 import { getSkills } from "./store/skills/skillSlice";
+import { getUser } from "./store/user/userSlice";
 // screens
 import About from "./screens/About";
 import Contact from "./screens/Contact";
@@ -17,6 +18,15 @@ import ThemeButton from "./components/ThemeButton";
 
 const App = () => {
   const dispatch = useDispatch();
+
+  const fetchUser = async () => {
+    try {
+      const { data } = await axios.get("/user.json");
+      dispatch(getUser(data));
+    } catch (error) {
+      console.log(error);
+    }
+  };
 
   const fetchWorks = async () => {
     try {
@@ -37,6 +47,7 @@ const App = () => {
   };
 
   useEffect(() => {
+    fetchUser();
     fetchWorks();
     fetchSkills();
   }, []);

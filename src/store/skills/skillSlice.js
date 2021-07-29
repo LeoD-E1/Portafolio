@@ -4,9 +4,7 @@ const skillSlice = createSlice({
   name: "skill",
   initialState: [],
   reducers: {
-    getSkills: (state, action) => {
-      return (state = [...action.payload]);
-    },
+    getSkills: (state, action) => (state = [...action.payload]),
     editSkill: (state, action) => {
       state.name = action.payload.name;
       state.level = action.payload.level;

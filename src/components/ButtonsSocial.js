@@ -1,10 +1,10 @@
 import React from "react";
 import { FaLinkedinIn, FaGithub } from "react-icons/fa";
-import { HStack, Icon, Link } from "@chakra-ui/react";
+import { VStack, Icon, Link } from "@chakra-ui/react";
 
 const ButtonsSocial = () => {
   return (
-    <HStack>
+    <VStack position="fixed" left={3} bottom={5}>
       <Link
         href="https://linkedin.com/in/leonardo-d-angeli-9723b7177"
         isExternal
@@ -14,8 +14,7 @@ const ButtonsSocial = () => {
           w={10}
           h={10}
           p={2}
-          rounded="full"
-          css={{ border: "1px solid #999", transition: "all 200ms ease-in " }}
+          css={{ border: "1px solid #999", transition: "all 300ms ease-in " }}
           _hover={{
             bg: "orangered",
             color: "white",
@@ -29,8 +28,7 @@ const ButtonsSocial = () => {
           w={10}
           h={10}
           p={2}
-          css={{ border: "1px solid #999", transition: "all 200ms ease-in " }}
-          rounded="full"
+          css={{ border: "1px solid #999", transition: "all 300ms ease-in " }}
           _hover={{
             bg: "orangered",
             color: "white",
@@ -38,7 +36,7 @@ const ButtonsSocial = () => {
           }}
         />
       </Link>
-    </HStack>
+    </VStack>
   );
 };
 

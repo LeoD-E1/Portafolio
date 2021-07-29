@@ -11,7 +11,6 @@ const Header = () => {
       bgColor={backgroundColor}
       position="sticky"
       top="0"
-      boxShadow="md"
       h={["7vh", "5vh"]}
       w={"100%"}
       p={2}

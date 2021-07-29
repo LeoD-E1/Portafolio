@@ -4,9 +4,7 @@ const workSlice = createSlice({
   name: "work",
   initialState: [],
   reducers: {
-    getWorks: (state, action) => {
-      return (state = [...action.payload]);
-    },
+    getWorks: (state, action) => (state = [...action.payload]),
     editWork: (state, action) => {
       state.name = action.payload.name;
       state.link = action.payload.link;
