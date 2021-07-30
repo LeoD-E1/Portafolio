@@ -18,7 +18,6 @@ import ThemeButton from "./components/ThemeButton";
 
 const App = () => {
   const dispatch = useDispatch();
-
   const fetchUser = async () => {
     try {
       const { data } = await axios.get("/user.json");
@@ -50,6 +49,7 @@ const App = () => {
     fetchUser();
     fetchWorks();
     fetchSkills();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return (

@@ -1,13 +1,5 @@
 import React from "react";
-import {
-  Avatar,
-  Box,
-  Grid,
-  GridItem,
-  Flex,
-  VStack,
-  Text,
-} from "@chakra-ui/react";
+import { Avatar, Flex, VStack, Text } from "@chakra-ui/react";
 
 const AboutMe = () => {
   return (

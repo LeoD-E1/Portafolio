@@ -49,7 +49,6 @@ const Presentation = () => {
                 lg: "6xl",
               })}
             >
-              {/* Leonardo D'angeli */}
               {user.name} {user.surname}
             </Heading>
             <Text
@@ -57,7 +56,7 @@ const Presentation = () => {
               fontSize={useBreakpointValue({ base: "xl", md: "2xl" })}
               fontWeight={700}
             >
-              I create solutions
+              {user.target}
             </Text>
           </Stack>
           <Stack direction={"row"}>
