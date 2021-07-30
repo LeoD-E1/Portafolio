@@ -19,7 +19,8 @@ const Presentation = () => {
   return (
     <Flex
       w={"full"}
-      h="95vh"
+      h="100vh"
+      mt={"-5vh"}
       backgroundImage={"url(https://wallpaperaccess.com/full/3497712.jpg)"}
       backgroundSize={"cover"}
       backgroundPosition={"center center"}
