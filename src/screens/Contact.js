@@ -1,7 +1,7 @@
-import React from 'react'
-import { Box } from '@chakra-ui/react'
-import FormContact from '../components/FormContact'
-import ButtonBack from '../components/ButtonBack'
+import React from "react";
+import { Box } from "@chakra-ui/react";
+import FormContact from "../components/FormContact";
+import ButtonBack from "../components/ButtonBack";
 
 const Contact = () => {
   return (
@@ -9,7 +9,7 @@ const Contact = () => {
       <FormContact />
       <ButtonBack />
     </Box>
-  )
-}
+  );
+};
 
-export default Contact
+export default Contact;

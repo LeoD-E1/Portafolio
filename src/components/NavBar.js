@@ -1,11 +1,5 @@
 import React from "react";
-import {
-  Center,
-  Icon,
-  Grid,
-  GridItem,
-  useColorModeValue,
-} from "@chakra-ui/react";
+import { Icon, Grid, GridItem, useColorModeValue } from "@chakra-ui/react";
 import { Link } from "react-router-dom";
 import { EmailIcon } from "@chakra-ui/icons";
 import { BsBriefcaseFill } from "react-icons/bs";
@@ -16,36 +10,28 @@ const NavBar = () => {
   const iconColor = useColorModeValue("orangered", "white");
 
   return (
-    <Grid templateColumns="repeat(4, 1fr)" gap={3} w="100%">
-      <GridItem colSpan={1}>
+    <Grid templateColumns="repeat(4, 1fr)" w={["100%"]}>
+      <GridItem colSpan={1} align="center">
         <Link to="/about">
-          <Center>
-            <Icon as={FaUserCircle} w={5} h={5} color={iconColor} />
-          </Center>
+          <Icon as={FaUserCircle} w={[5, 7]} h={[5, 7]} color={iconColor} />
         </Link>
       </GridItem>
 
-      <GridItem colSpan={1}>
+      <GridItem colSpan={1} align="center">
         <Link to="/works">
-          <Center>
-            <Icon as={BsBriefcaseFill} w={5} h={5} color={iconColor} />
-          </Center>
+          <Icon as={BsBriefcaseFill} w={[5, 7]} h={[5, 7]} color={iconColor} />
         </Link>
       </GridItem>
 
-      <GridItem colSpan={1}>
+      <GridItem colSpan={1} align="center">
         <Link to="skills">
-          <Center>
-            <Icon as={SiJavascript} w={5} h={5} color={iconColor} />
-          </Center>
+          <Icon as={SiJavascript} w={[5, 7]} h={[5, 7]} color={iconColor} />
         </Link>
       </GridItem>
 
-      <GridItem colSpan={1}>
+      <GridItem colSpan={1} align="center">
         <Link to="/contact">
-          <Center>
-            <EmailIcon w={5} h={5} color={iconColor} />
-          </Center>
+          <EmailIcon w={[5, 7]} h={[5, 7]} color={iconColor} />
         </Link>
       </GridItem>
     </Grid>

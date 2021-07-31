@@ -35,9 +35,15 @@ const FormContact = () => {
   const [message, setMessage] = useState(initialState);
 
   return (
-    <Flex h="93vh" alignItems="center" justifyContent="center">
+    <Flex h="100vh" alignItems="center" justifyContent="center">
       <Flex direction="column" bgColor={backgroundColor} p={12} rounded={6}>
-        <Heading mb={5} color="orangered" fontSize="2xl" bgGradient="linear(to-r, blue.600, pink.500, red.600)" bgClip="text">
+        <Heading
+          mb={5}
+          color="orangered"
+          fontSize="2xl"
+          bgGradient="linear(to-r, blue.600, pink.500, red.600)"
+          bgClip="text"
+        >
           Send me an E-mail
         </Heading>
         <form onSubmit={handleSubmit}>
