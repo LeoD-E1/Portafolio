@@ -16,6 +16,7 @@ const userSlice = createSlice({
       state.linkedin = action.payload.linkedin;
       state.image = action.payload.image;
       state.target = action.payload.target;
+      state.hobbies = action.payload.hobbies;
     },
   },
 });

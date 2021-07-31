@@ -14,11 +14,12 @@ const ButtonsSocial = () => {
           w={10}
           h={10}
           p={2}
-          css={{ border: "1px solid #999", transition: "all 300ms ease-in " }}
+          css={{ border: "1px solid #999", transition: "all 300ms ease-in" }}
           _hover={{
             bg: "orangered",
             color: "white",
             border: "1px solid orangered",
+            borderRadius: "50%",
           }}
         />
       </Link>
@@ -33,6 +34,7 @@ const ButtonsSocial = () => {
             bg: "orangered",
             color: "white",
             border: "1px solid orangered",
+            borderRadius: "50%",
           }}
         />
       </Link>

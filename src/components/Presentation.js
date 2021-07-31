@@ -21,7 +21,7 @@ const Presentation = () => {
       w={"full"}
       h="100vh"
       mt={"-5vh"}
-      backgroundImage={"url(https://wallpaperaccess.com/full/3497712.jpg)"}
+      backgroundImage={"url(https://fondosmil.com/fondo/17010.jpg)"}
       backgroundSize={"cover"}
       backgroundPosition={"center center"}
       backgroundAttachment={"fixed"}
@@ -30,7 +30,9 @@ const Presentation = () => {
         w={"full"}
         justify={"center"}
         px={useBreakpointValue({ base: 4, md: 8 })}
-        bgGradient={"linear(to-r, blackAlpha.600, transparent)"}
+        bgGradient={
+          "linear(to-r, blackAlpha.800,  blackAlpha.500,  blackAlpha.200)"
+        }
       >
         <Stack maxW={"2xl"} align={"flex-start"} spacing={8}>
           <Stack spacing={0}>

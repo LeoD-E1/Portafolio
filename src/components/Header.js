@@ -4,7 +4,7 @@ import Logo from "./Logo";
 import NavBar from "./NavBar";
 
 const Header = () => {
-  const backgroundColor = useColorModeValue("transparent", "#1B202C");
+  const backgroundColor = useColorModeValue("blackAlpha.500", "#1B202C");
 
   return (
     <HStack

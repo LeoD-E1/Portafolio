@@ -7,7 +7,7 @@ import { SiJavascript } from "react-icons/si";
 import { FaUserCircle } from "react-icons/fa";
 
 const NavBar = () => {
-  const iconColor = useColorModeValue("orangered", "white");
+  const iconColor = useColorModeValue("white", "white");
 
   return (
     <Grid templateColumns="repeat(4, 1fr)" w={["100%"]}>
