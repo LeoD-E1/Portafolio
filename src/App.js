@@ -8,13 +8,13 @@ import { getWorks } from "./store/work/workSlice";
 import { getSkills } from "./store/skills/skillSlice";
 import { getUser } from "./store/user/userSlice";
 // screens
-import About from "./screens/About";
-import Contact from "./screens/Contact";
-import Skills from "./screens/Skills";
-import Works from "./screens/Works";
-import HomeScreen from "./screens/HomeScreen";
+import About from "./screens/about/About";
+import Contact from "./screens/contact/Contact";
+import Skills from "./screens/skills/Skills";
+import Works from "./screens/works/Works";
+import HomeScreen from "./screens/homeScreen/HomeScreen";
 // Components
-import ThemeButton from "./components/ThemeButton";
+import ThemeButton from "./components/buttons/ThemeButton";
 
 const App = () => {
   const dispatch = useDispatch();

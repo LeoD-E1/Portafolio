@@ -1,6 +1,6 @@
 import { Heading, Box, Center } from "@chakra-ui/react";
-import CardsWork from "../components/CardsWork";
-import ButtonBack from "../components/ButtonBack";
+import CardsWork from "../../components/CardsWork";
+import ButtonBack from "../../components/buttons/ButtonBack";
 
 const Works = () => {
   return (

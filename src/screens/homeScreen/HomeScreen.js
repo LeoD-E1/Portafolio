@@ -1,9 +1,9 @@
 import React from "react";
 import { Box } from "@chakra-ui/react";
-import Presentation from "../components/Presentation";
-import LastSkills from "./components/LastSkills";
-import Header from "../components/Header";
-import LastWordCards from "./components/LastWordCards";
+import Presentation from "../../components/Presentation";
+import LastSkills from "../components/LastSkills";
+import Header from "../../components/nav/Header";
+import LastWordCards from "../components/LastWordCards";
 
 const HomeScreen = () => {
   return (

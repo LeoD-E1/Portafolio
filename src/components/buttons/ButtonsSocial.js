@@ -1,5 +1,5 @@
 import React from "react";
-import { FaLinkedinIn, FaGithub } from "react-icons/fa";
+import { FaLinkedinIn, FaGithub, FaInstagram } from "react-icons/fa";
 import { VStack, Icon, Link } from "@chakra-ui/react";
 
 const ButtonsSocial = () => {
@@ -14,7 +14,7 @@ const ButtonsSocial = () => {
           w={10}
           h={10}
           p={2}
-          css={{ border: "1px solid #999", transition: "all 300ms ease-in" }}
+          css={{ border: "1px solid #999", transition: "all 300ms ease-in " }}
           _hover={{
             bg: "orangered",
             color: "white",
@@ -26,6 +26,21 @@ const ButtonsSocial = () => {
       <Link href="https://github.com/leod-e1" isExternal>
         <Icon
           as={FaGithub}
+          w={10}
+          h={10}
+          p={2}
+          css={{ border: "1px solid #999", transition: "all 300ms ease-in " }}
+          _hover={{
+            bg: "orangered",
+            color: "white",
+            border: "1px solid orangered",
+            borderRadius: "50%",
+          }}
+        />
+      </Link>
+      <Link href="https://www.instagram.com/leoda.dev" isExternal>
+        <Icon
+          as={FaInstagram}
           w={10}
           h={10}
           p={2}

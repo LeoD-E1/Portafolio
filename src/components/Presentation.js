@@ -10,7 +10,7 @@ import {
 } from "@chakra-ui/react";
 import { EmailIcon } from "@chakra-ui/icons";
 import { Link } from "react-router-dom";
-import ButtonsSocial from "./ButtonsSocial";
+import ButtonsSocial from "./buttons/ButtonsSocial";
 import { useSelector } from "react-redux";
 
 const Presentation = () => {
@@ -21,7 +21,7 @@ const Presentation = () => {
       w={"full"}
       h="100vh"
       mt={"-5vh"}
-      backgroundImage={"url(https://fondosmil.com/fondo/17010.jpg)"}
+      backgroundImage={`url(${user.background})`}
       backgroundSize={"cover"}
       backgroundPosition={"center center"}
       backgroundAttachment={"fixed"}

@@ -8,7 +8,7 @@ const Logo = () => {
 
   return (
     <Link to="/">
-      <Heading fontSize={["xl", "2xl", "3xl"]} color="#3DADFF" px={2}>
+      <Heading fontSize={["md", "xl", "2xl"]} color="#3DADFF" px={2}>
         <Text css={{ fontFamily: "Russo One, sans serif" }}>
           {user.nickname}
         </Text>
