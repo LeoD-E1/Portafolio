@@ -16,6 +16,7 @@ const userSlice = createSlice({
       state.target = action.payload.target;
       state.hobbies = action.payload.hobbies;
       state.background = action.payload.background;
+      state.profession = action.payload.profession;
     },
   },
 });
