@@ -16,9 +16,9 @@ const ButtonsSocial = () => {
           p={2}
           css={{ border: "1px solid #999", transition: "all 300ms ease-in " }}
           _hover={{
-            bg: "orangered",
+            bg: "#3DADFF",
             color: "white",
-            border: "1px solid orangered",
+            border: "1px solid #3DADFF",
             borderRadius: "50%",
           }}
         />
@@ -31,9 +31,9 @@ const ButtonsSocial = () => {
           p={2}
           css={{ border: "1px solid #999", transition: "all 300ms ease-in " }}
           _hover={{
-            bg: "orangered",
+            bg: "#3DADFF",
             color: "white",
-            border: "1px solid orangered",
+            border: "1px solid #3DADFF",
             borderRadius: "50%",
           }}
         />
@@ -46,9 +46,9 @@ const ButtonsSocial = () => {
           p={2}
           css={{ border: "1px solid #999", transition: "all 300ms ease-in " }}
           _hover={{
-            bg: "orangered",
+            bg: "#3DADFF",
             color: "white",
-            border: "1px solid orangered",
+            border: "1px solid #3DADFF",
             borderRadius: "50%",
           }}
         />

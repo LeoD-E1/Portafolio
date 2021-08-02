@@ -22,7 +22,9 @@ const LevelSkills = ({ skills }) => {
             <Text as="em" fontWeight="bold" fontSize={["sm", "md", "xl"]}>
               {item.name}
             </Text>
-            <Text color="orangered">{item.level}%</Text>
+            <Text color="#3DADFF">
+              {item.level}% - {item.years} years
+            </Text>
           </GridItem>
           <GridItem colSpan="4">
             <Progress

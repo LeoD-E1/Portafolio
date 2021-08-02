@@ -13,17 +13,13 @@ import {
 import { useSelector } from "react-redux";
 
 const CardProfile = () => {
+  const color = useColorModeValue("white", "gray.800");
   const color2 = useColorModeValue("gray.700", "gray.400");
   const user = useSelector((state) => state.user);
 
   return (
     <Center>
-      <Box
-        maxW={"1000px"}
-        w={"full"}
-        bg={useColorModeValue("white", "gray.800")}
-        overflow={"hidden"}
-      >
+      <Box maxW={"1000px"} w={"full"} bg={color} overflow={"hidden"}>
         <Image
           h={"200px"}
           w={"full"}

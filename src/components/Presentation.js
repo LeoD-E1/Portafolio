@@ -24,7 +24,6 @@ const Presentation = () => {
       backgroundImage={`url(${user.background})`}
       backgroundSize={"cover"}
       backgroundPosition={"center center"}
-      backgroundAttachment={"fixed"}
     >
       <VStack
         w={"full"}
@@ -72,7 +71,7 @@ const Presentation = () => {
                   transition: "all 300ms ease",
                 }}
                 color={"white"}
-                _hover={{ bg: "orangered", border: "1px solid orangered" }}
+                _hover={{ bg: "#3DADFF", border: "1px solid #3DADFF" }}
               >
                 Get in touch
               </Button>
