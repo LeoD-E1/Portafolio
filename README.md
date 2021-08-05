@@ -1,6 +1,6 @@
 # Portafolio
 
-This project are a portfolio to me, for other people, employers, CEO, to see my work and contact me. **At the moment is a simple portfolio** but i want to make it a platform application where you will be able to
+This project is a portfolio to me, for other people, employers, CEO, and clients to see my work and contact me. **At the moment is a simple portfolio** but i want to make it a platform application where you will be able to
 
 - Sign up and login
 - Download my CV
@@ -28,7 +28,7 @@ with this you have already to run the project
 
 ### Deployment
 
-Once that you has instaled the dependencies, run the follow command
+Once that you have instaled the dependencies, run the follow command
 
 **npm start**
 
