@@ -26,7 +26,7 @@ const Card = ({ model }) => {
                 <Image src={item.portrait} h="200px" w="100%" rounded="md" />
                 <Flex p={2} align="baseline" mt={2}>
                   <Badge px="2" bg="#3DADFF">
-                    {item.id}
+                    {item.date}
                   </Badge>
                 </Flex>
                 <Text
