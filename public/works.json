@@ -25,11 +25,11 @@
   },
   {
     "id": 4,
-    "name": "Gabiteacher",
-    "link": "https://gabiteacher-dev.herokuapp.com",
-    "portrait": "https://gabiteacher-dev.herokuapp.com/public/img/knowledge-1052014_1920.jpg",
+    "name": "Vainilla-cart",
+    "link": "https://leoda-ecommerce.netlify.app/",
+    "portrait": "https://s1.1zoom.me/b5050/219/Fast_food_Pizza_Tomatoes_Wood_planks_562796_3840x2160.jpg",
     "images": [],
-    "description": "Tu escuela de inglés online, Capacitacion de inglés para personas que quieran aprender desde los básicos"
+    "description": "A simple cart aplication made with vainilla javascript."
   },
   {
     "id": 5,
@@ -47,7 +47,7 @@
     "link": "https://leoda-profile-user.netlify.app/",
     "portrait": "https://fondosmil.com/fondo/17010.jpg",
     "images": [],
-    "description": "a brief user profile application",
+    "description": "a brief user profile application, made in react with chakraUI as component library",
     "technologies": [],
     "date": ""
   },
