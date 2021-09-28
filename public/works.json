@@ -2,8 +2,8 @@
   {
     "id": 1,
     "name": "Gabiteacher",
-    "link": "https://gabiteacher-dev.herokuapp.com",
-    "portrait": "https://gabiteacher-dev.herokuapp.com/public/img/knowledge-1052014_1920.jpg",
+    "link": "http://gabiteacher.com/",
+    "portrait": "http://gabiteacher.com/public/img/knowledge-1052014_1920.jpg",
     "images": [],
     "description": "Tu escuela de inglés online, Capacitacion de inglés para personas que quieran aprender desde los básicos"
   },
