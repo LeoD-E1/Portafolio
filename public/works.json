@@ -43,5 +43,14 @@
     "images": [],
     "description": "A simple dashboard aplication made with Next JS and Material UI.",
     "date": "01-04-2022"
+  },
+  {
+    "id": 6,
+    "name": "Leoda-shop",
+    "link": "https://leoda-shop.vercel.app/",
+    "portrait": "",
+    "images": [],
+    "description": "An minimalist view project for a e-commerce website, this project is still in development.",
+    "date": "24-05-2022"
   }
 ]

@@ -49,7 +49,6 @@ const App = () => {
     fetchUser();
     fetchWorks();
     fetchSkills();
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return (
