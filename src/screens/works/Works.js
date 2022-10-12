@@ -1,15 +1,16 @@
-import { Heading, Box, Center } from "@chakra-ui/react";
-import CardsWork from "../../components/CardsWork";
-import ButtonBack from "../../components/buttons/ButtonBack";
+import { Heading, Box, Center } from '@chakra-ui/react';
+import CardsWork from '../../components/CardsWork';
+import { useSelector } from 'react-redux';
 
 const Works = () => {
+  const { works } = useSelector((state) => state.work);
+
   return (
     <Box>
-      <ButtonBack />
       <Center>
         <Heading m={5}>My Porfolio</Heading>
       </Center>
-      <CardsWork />
+      <CardsWork repos={works} stop={9} />
     </Box>
   );
 };

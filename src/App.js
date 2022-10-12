@@ -1,44 +1,44 @@
 // External
-import React, { useEffect } from "react";
-import axios from "axios";
-import { useDispatch } from "react-redux";
-import { BrowserRouter, Switch, Route } from "react-router-dom";
+import React, { useEffect, useState } from 'react';
+import axios from 'axios';
+import { fetchWorks } from 'api/works';
+import { useDispatch } from 'react-redux';
+import { pages } from './screens';
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
 // Reducers
-import { getWorks } from "./store/work/workSlice";
-import { getSkills } from "./store/skills/skillSlice";
-import { getUser } from "./store/user/userSlice";
-// screens
-import About from "./screens/about/About";
-import Contact from "./screens/contact/Contact";
-import Skills from "./screens/skills/Skills";
-import Works from "./screens/works/Works";
-import HomeScreen from "./screens/homeScreen/HomeScreen";
+import { getWorks } from './store/work/workSlice';
+import { getSkills } from './store/skills/skillSlice';
+import { getUser } from './store/user/userSlice';
 // Components
-import ThemeButton from "./components/buttons/ThemeButton";
+import ThemeButton from './components/buttons/ThemeButton';
 
 const App = () => {
   const dispatch = useDispatch();
+  const [loading, setLoading] = useState(true);
+
   const fetchUser = async () => {
     try {
-      const { data } = await axios.get("/user.json");
+      const { data } = await axios.get('/user.json');
       dispatch(getUser(data));
     } catch (error) {
       console.log(error);
     }
   };
 
-  const fetchWorks = async () => {
+  const getDataWorks = async () => {
     try {
-      const { data } = await axios.get("/works.json");
-      dispatch(getWorks(data));
+      const works = await fetchWorks();
+      dispatch(getWorks(works));
     } catch (error) {
       console.log(error);
+    } finally {
+      setLoading(false);
     }
   };
 
   const fetchSkills = async () => {
     try {
-      const { data } = await axios.get("/skills.json");
+      const { data } = await axios.get('/skills.json');
       dispatch(getSkills(data));
     } catch (error) {
       console.log(error);
@@ -46,24 +46,36 @@ const App = () => {
   };
 
   useEffect(() => {
-    fetchUser();
-    fetchWorks();
-    fetchSkills();
+    (async () => {
+      await fetchUser();
+      await fetchSkills();
+      await getDataWorks();
+    })();
   }, []);
 
   return (
-    <BrowserRouter>
-      <div className="App">
-        <Switch>
-          <Route path="/" component={HomeScreen} exact />
-          <Route path="/about" component={About} exact />
-          <Route path="/contact" component={Contact} exact />
-          <Route path="/skills" component={Skills} exact />
-          <Route path="/works" component={Works} exact />
-        </Switch>
-        <ThemeButton />
-      </div>
-    </BrowserRouter>
+    <>
+      {loading ? (
+        <p>Loading...</p>
+      ) : (
+        <BrowserRouter>
+          <div className='App'>
+            <Switch>
+              {pages.map((page, index) => (
+                <Route
+                  key={index}
+                  path={page.path}
+                  component={page.component}
+                  exact
+                />
+              ))}
+            </Switch>
+            <ThemeButton />
+            ``
+          </div>
+        </BrowserRouter>
+      )}
+    </>
   );
 };
 
