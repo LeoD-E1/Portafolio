@@ -27,7 +27,7 @@ const CardProfile = () => {
           objectFit={"cover"}
         />
         <Flex justify={"center"} mt={-12}>
-          <AvatarImage size="2xl" />
+          <AvatarImage size={["150px", "200px", "250px"]} />
         </Flex>
 
         <Box p={6}>
